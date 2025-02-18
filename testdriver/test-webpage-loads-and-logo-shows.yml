@@ -1,0 +1,14 @@
+version: 4.2.12
+session: 67b4b0236285f3f5ae769166
+steps:
+  - prompt: Open the webpage.
+    commands:
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: >-
+      Assert that the Amazon logo is visible.  # Use the content of the file
+      from the environment
+    commands:
+      - command: assert
+        expect: the Amazon logo is not visible
