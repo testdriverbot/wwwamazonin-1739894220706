@@ -1,0 +1,21 @@
+version: 4.2.12
+session: 67b4b0206285f3f5ae769164
+steps:
+  - prompt: Scroll to the bottom of the page.
+    commands:
+      - command: scroll
+        direction: down
+        method: keyboard
+        amount: 3000
+  - prompt: Click the "Privacy Notice" link.
+    commands:
+      - command: hover-text
+        text: Privacy Notice
+        description: privacy notice link in the footer
+        action: click
+  - prompt: >-
+      Assert that the "Privacy Notice" page is displayed correctly.  # Use the
+      content of the file from the environment
+    commands:
+      - command: assert
+        expect: Amazon.in Privacy Notice is visible
