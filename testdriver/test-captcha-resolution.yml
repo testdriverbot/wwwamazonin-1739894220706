@@ -1,0 +1,5 @@
+version: 4.2.12
+session: 67b4b02ba882472144674f7b
+steps:
+  - prompt: Type the characters from the CAPTCHA.
+    commands: []
