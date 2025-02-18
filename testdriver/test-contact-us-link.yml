@@ -1,0 +1,9 @@
+version: 4.2.12
+session: 67b4b02da882472144674f7f
+steps:
+  - prompt: Scroll to the bottom of the page.
+    commands:
+      - command: scroll
+        direction: down
+        method: keyboard
+        amount: 300
